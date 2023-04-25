@@ -48,3 +48,9 @@ apellido = input("INGRESE SU APELLIDO: ")
 # lo que esta entre llaves lo toma como variable, es decir busca contenido
 
 print(f"EL NOMBRE QUE USTED INGRESO ES: {nombre} Y SU APELLIDO ES {apellido}")
+
+# PASAR DE UN TIPO A OTRO
+
+# int(x) ---> pasar el contenido de x a entero (si es posible)
+# float(x) ---> pasa el contenido de x a flotante (si es posible)
+# str(x) ---> pasa el contenido de x a un str

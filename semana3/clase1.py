@@ -1,0 +1,44 @@
+## while, SE EJECUTA HASTA QUE SU CONDICION SEA FALSA.
+
+'''
+while (condicion):
+	ACCIONES
+
+
+DENTRO DE LAS ACCIONES SE DEBE EN ELAGUN MOMENTO MODIFICAR LOS VALORES DE LA CONDICION,
+PARANO CAER EN UN CICLO INFINITO
+'''
+
+#PROGRAMA QUE MUESTRE LOS PRIMEROS 10 NUMEROS
+
+contador = 1
+
+while contador <= 10:
+	print(contador)
+	contador = contador + 1
+	
+# FOR EN PYTHON, FUNCIONA CON CUAQUIER VARIABLE ITERABLE
+'''
+QUE DATOS SON ITERABLES:
+STRINGS
+LISTAS
+TUPLAS
+LOS DICCIONARIOS
+LOS RANGOS
+'''
+#RANGE(VI,VF,I) SI NO ACLARO, VI POR DECTO ES 0 y I es 1
+#RANGE(1,11)---> [1,2,3,4,5,6,7,8,9,10]
+
+for contador in range(1,11):
+	print(contador)
+
+#OTRO EJEMPLO DE ALGO ITERABLE
+
+for c in 'NICO':
+	print(c)
+
+#OTRO EJEMPLO CON UNA LISTA
+x = ['nico',34,1.75]
+
+for datos in x:
+	print(datos)

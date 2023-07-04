@@ -8,9 +8,12 @@ ALLOWED_HOSTS = ['*']
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#ESTA ES LA CONFIGURACION PARA BD SQLITE
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+

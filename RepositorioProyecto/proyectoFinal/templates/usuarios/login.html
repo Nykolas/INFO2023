@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+			<form method="POST">{%csrf_token%}
+				{{form.errors}}
+				<input type="text" name="username" placeholder="USUARIO">
+				<input type="password" name="password" placeholder="PASSWORD">
+
+				<input type="submit" name="" value="ENVIAR">
+			</form>
+{% endblock %}

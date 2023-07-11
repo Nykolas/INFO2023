@@ -15,8 +15,13 @@
 		</div>
 		<div>
 			<a href="{% url 'home' %}">Home</a>
-			<a href="{% url 'segunda' %}">Segunda</a>
-			<a href="{% url 'productos:catalogo' %}">Catalogo</a>			
+			{% if user.is_authenticated %}
+				HOLA COMO ESTAS? {{user.username}}
+				<a href="{% url 'logout' %}">Salir</a>
+			{% else %}
+				<a href="{% url 'login' %}">Login</a>
+			{% endif %}
+
 		</div>
 	</div>
 	<div class="container p-3">

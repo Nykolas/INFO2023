@@ -22,8 +22,4 @@ urlpatterns = [
 
     path('', views.Home, name = 'home'),
 
-    path('segunda', views.Segunda_vista, name = 'segunda'),
-
-    path('Productos/', include('apps.productos.urls'))
-
 ]

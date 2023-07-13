@@ -29,6 +29,9 @@ urlpatterns = [
     path('logout/',auth.LogoutView.as_view(),name="logout"),
 
     #URLS DE USUARIOS
-    path('usuarios/', include('apps.usuarios.urls'))
+    path('usuarios/', include('apps.usuarios.urls')),
+
+    #URLS DE NOTICIAS
+    path('noticias/', include('apps.noticias.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
